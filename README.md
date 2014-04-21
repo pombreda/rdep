@@ -1,8 +1,8 @@
 rdep
 ====
 
-`rdep` is a simple gem / command line tool that will print the dependencies of a ruby project.
-`rdep` is still under active development. There are bugs. Pull requests welcome :)
+`rdep` is a simple gem / command line tool that will print the dependencies of a ruby project.<br>
+`rdep` is still under active development. There are bugs. Pull requests welcome :)<br>
 See also: https://github.com/sourcegraph/pydep
 
 __WARNING: `rdep` may execute a project's .gemspec or `Gemfile`. Do not run on untrusted code.__

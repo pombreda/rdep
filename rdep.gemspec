@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description  = ""
   s.authors      = ["Beyang Liu"]
   s.email        = 'beyang@sourcegraph.com'
-  s.files        = ["lib/gemspec.rb", "lib/gemfile.rb"]
+  s.files        = ["lib/rdep.rb"]
   s.homepage     = 'https://sourcegraph.com'
   s.license      = 'Apache 2'
   s.require_path = 'lib'

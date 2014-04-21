@@ -3,6 +3,7 @@ require 'bundler'
 require 'net/http'
 require 'json'
 require 'tmpdir'
+require 'optparse'
 
 module RDep
 
@@ -104,9 +105,21 @@ module RDep
   end
 
   def self.run(args)
-    metadata = RDep::metadata(args[0])
+    optparser = OptionParser.new do |opts|
+      opts.banner = "Usage: rdep <project-dir>"
+    end
+    optparser.parse(args)
+
+    if args.length != 1
+      $stderr.puts optparser.help
+      return
+    end
+    projectdir = args[0]
+
+    metadata = RDep::metadata(projectdir)
     puts JSON.dump(metadata)
   end
+
 end
 
 if __FILE__ == $0

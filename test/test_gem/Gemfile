@@ -1,0 +1,9 @@
+# test Gemfile
+source 'https://rubygems.org'
+gemspec
+
+gem3 = 'dev_gem_3'
+
+gem 'dev_gem_1'
+gem 'dev_gem_2', '~> 1.2'
+gem gem3

@@ -1,2 +1,6 @@
 rdep
 ====
+
+Additional requirements
+-----------------------
+- RubyGems

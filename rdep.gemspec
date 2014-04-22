@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name         = 'rdep'
-  s.version      = '0.0.4'
+  s.version      = '0.0.4b'
   s.date         = '2014-04-18'
   s.summary      = ""
   s.description  = ""

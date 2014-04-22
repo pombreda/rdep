@@ -86,6 +86,7 @@ module RDep
     mdata = {}
     if gemspecs.length == 1
       gemspec = RDep::load_gemspec(gemspecs[0])
+      mdata[:type] = :gem
       mdata[:name] = gemspec.name
       mdata[:version] = gemspec.version
       if incl_deps
@@ -99,6 +100,7 @@ module RDep
       end
     elsif File.exists?(gemfile)
       gemfile_info = RDep::load_gemfile(gemfile)
+      mdata[:type] = :app
       mdata[:name] = nil
       mdata[:version] = nil
       if incl_deps

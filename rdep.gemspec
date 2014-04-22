@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name         = 'rdep'
-  s.version      = '0.0.4b'
+  s.version      = '0.0.4c'
   s.date         = '2014-04-18'
   s.summary      = ""
   s.description  = ""
@@ -12,4 +12,6 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.bindir       = 'bin'
   s.executables  = ['rdep']
+
+  s.add_dependency 'bundler', '~> 1.6.2'
 end

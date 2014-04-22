@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name         = 'rdep'
-  s.version      = '0.0.4d'
+  s.version      = '0.0.5a'
   s.date         = '2014-04-18'
   s.summary      = "Command line utility for displaying gem dependency metadata in JSON"
   s.description  = "See summary"

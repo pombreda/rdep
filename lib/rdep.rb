@@ -130,13 +130,14 @@ module RDep
 
     mdata = []
     project_dirs.each {|d|
+      m = nil
       begin
         m = metadata(d, incl_deps)
-        if m != nil
-          m[:path] = Pathname.new(d).relative_path_from(Pathname.new(File.expand_path(toplevel_dir))).to_s
-          mdata.push(m)
-        end
       rescue
+      end
+      if m != nil
+        m[:path] = Pathname.new(d).relative_path_from(Pathname.new(toplevel_dir)).to_s
+        mdata.push(m)
       end
     }
     return mdata
